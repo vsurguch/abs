@@ -26,7 +26,7 @@ class Tag(object):
 class Database(object):
     def __init__(self):
 
-        self.engine = create_engine('mysql+pymysql://surguch:sql0000@188.226.188.24:3306/abs?charset=utf8',
+        self.engine = create_engine('mysql+pymysql://host/abs?charset=utf8',
                                     echo=False)
         metadata = MetaData()
         metadata.bind = self.engine
